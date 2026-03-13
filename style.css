@@ -1,0 +1,79 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+body {
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+}
+
+#game-container {
+  line-height: 0; /* removes tiny spacing issues */
+}
+
+
+canvas {
+  display: block;
+}
+
+#instructions{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  display: flex;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.title{
+  padding-top: 2%;
+  text-align: center;
+  font-size: 40px;
+  color: yellow;
+}
+
+.instructions-para{
+  text-align: center;
+  font-size: 22px;
+  color: yellow;
+  width: 50%;
+  margin: auto;
+  padding-bottom: 1%;
+}
+
+.start-pic{
+  margin: auto;
+  display: block;
+  height: 40%;
+}
+
+.key-border{
+  border: 3px solid yellow;
+  padding: 1px;
+}
+
+/* repsonsive design for laptops and large screens */
+@media only screen and (max-width: 1600px) {
+  .title{
+    text-align: center;
+    font-size: 28px;
+    color: yellow;
+  }
+  
+  .instructions-para{
+    text-align: center;
+    font-size: 15px;
+    color: yellow;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .title{
+    padding-top: 5%;
+  }
+  
+
+}

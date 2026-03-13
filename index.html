@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Spongebob Squarepants Burger Flip Mania</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <script src="libraries/p5.joystick.js"></script>
+    <script src="Burger.js"></script>
+    <script src="functions.js"></script>
+    <!--Script to calibrate controller-->
+    <script src="gamepad.js"></script>
+  </head>
+
+  <body>
+    <div class="outer-div">
+      <div id="instructions">
+      
+        
+      <div class="instructions-para">
+        <h1 class="title">Spongebob Squarepants Burger Flip Mania</h1> 
+        <p>Spongebob is having a busy day at the Krusty Crab. It's your job to help him serve all the correct orders.</br><br>
+        On the left orders will come through every 5 seconds and you need to serve the corresponding orders.</br><br>
+        To place burgers hold the <span class="key-border">Shift</span> key, and move the burger using the Arrow Keys, then press the <span class="key-border">Spacebar</span> to place the burgers.</br><br>
+        Every 6 seconds they will change colour corresponding to how cooked the burgers are.<br>
+        Red = Raw</br>
+        Blue = Medium Rare</br>
+        Green = Medium</br>
+        Yellow = Medium Well</br>
+        Brown = Well done</br>
+        Black = Burnt</br><br>
+        To serve the burger hold the <span class="key-border">CTRL</span> key, and move the spatula using the Arrow Keys onto the burger until it is highlighted, and then press th <span class="key-border">Spacebar</span> to serve.</br><br>
+        If you serve a burger that has been ordered, 5 seconds will be added to your time and 10 points will be added to your score</br>
+        Be careful because if you serve a raw or burnt burger, or a burger that is not ordered you will have 2 seconds deducted from your time and you will lose 10 points.</br><br>
+        If the timer runs out or there are 20 orders waiting to be served, Spongebob will be fired. <br><br>
+        Press <span class="key-border">Enter</span> to begin & press <span class="key-border">R</span> to restart.<br><br></p>
+      </div>
+        <!--Image on start screen courtesy of Midjourney.ai -->
+        <img class="start-pic" src="assets/happy-sponge.png" alt="happy-spongebob">
+      </div>
+    </div>
+    
+    <div id="game-container">
+      <script src="sketch.js"></script>
+    </div>  
+  </body>
+</html>
+

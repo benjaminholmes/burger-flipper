@@ -107,16 +107,22 @@ function keyboardControls() {
   }
 }
 
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
 // keyboard version of startScreen
 function startScreenKeyboard(keyCodePressed) {
   let start = document.getElementById("instructions");
 
   // Detect single press of Enter
-  if (keyCodePressed === ENTER) {
+  if (keyCodePressed === ENTER && instructionsVisible == true) {
 
     instructionsVisible = !instructionsVisible;
 
     start.style.display = instructionsVisible ? "block" : "none";
+    fullscreen(true);
+    resizeCanvas(windowWidth, windowHeight);
 
     isSketchRunning = !instructionsVisible;
     gamePaused = instructionsVisible;

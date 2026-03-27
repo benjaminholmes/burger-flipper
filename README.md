@@ -1,4 +1,4 @@
 # burger-flipper
 A burger flipping simulation based in the Spongebob Squarepants universe. Built using p5.js, HTML and CSS. Allows for both keyboard and limited gamepad support.
 
-<a target="blank">https://benjaminholmes.github.io/burger-flipper/</a>
+<a target="_blank">https://benjaminholmes.github.io/burger-flipper/</a>
